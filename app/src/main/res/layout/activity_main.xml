@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/img012" />
+
+    <TextView
+        android:id="@+id/Name_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:textColor="#54D35A"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButConnect"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/ButtonConnect"
+        android:textColor="#01C2AC"
+        android:textColorHint="#964A4A"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButClose"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/ButtonClose"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/TogButHeat"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:text="@string/ButtonHeat"
+        android:textColor="#F10101"
+        android:textColorLink="#469928"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextButHeat" />
+
+    <TextView
+        android:id="@+id/TextButHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButtonHeat"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/TogButHeat"
+        app:layout_constraintStart_toStartOf="@+id/TogButHeat"
+        app:layout_constraintTop_toBottomOf="@+id/ButConnect" />
+
+    <TextView
+        android:id="@+id/textButPump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButtonPump"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/TogButPump"
+        app:layout_constraintStart_toStartOf="@+id/TogButPump"
+        app:layout_constraintTop_toBottomOf="@+id/ButConnect" />
+
+    <ToggleButton
+        android:id="@+id/TogButGon"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:text="@string/ButtonHeat"
+        android:textColor="#F10101"
+        android:textColorHint="#4BB425"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/TogButPump"
+        app:layout_constraintStart_toEndOf="@+id/TogButHeat"
+        app:layout_constraintTop_toBottomOf="@+id/textButGon" />
+
+    <TextView
+        android:id="@+id/textButGon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButtonGon"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/TogButGon"
+        app:layout_constraintStart_toStartOf="@+id/TogButGon"
+        app:layout_constraintTop_toBottomOf="@+id/ButConnect" />
+
+    <ToggleButton
+        android:id="@+id/TogButPump"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:checked="false"
+        android:text="@string/ButtonHeat"
+        android:textColor="#F10101"
+        android:textColorHighlight="#37AC2A"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textButPump" />
+
+    <ImageView
+        android:id="@+id/ImageAlarm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <TextView
+        android:id="@+id/TextAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Alarm"
+        android:textColor="#FF3C00"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageAlarm"
+        app:layout_constraintEnd_toStartOf="@+id/ImageAlarm"
+        app:layout_constraintTop_toTopOf="@+id/ImageAlarm" />
+
+    <TextView
+        android:id="@+id/textUstavka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TogButGon" />
+
+    <TextView
+        android:id="@+id/textKdim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUstavka" />
+
+    <TextView
+        android:id="@+id/textHeatVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKdim" />
+
+    <TextView
+        android:id="@+id/textColdTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeatVal" />
+
+    <TextView
+        android:id="@+id/textDefTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textColdTemp" />
+
+    <TextView
+        android:id="@+id/textResTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDefTemp" />
+
+    <TextView
+        android:id="@+id/textTwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResTemp" />
+
+    <TextView
+        android:id="@+id/textTpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButKpid"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/ButKup"
+        app:layout_constraintStart_toStartOf="@+id/ButKup"
+        app:layout_constraintTop_toBottomOf="@+id/textTwa" />
+
+    <Button
+        android:id="@+id/ButKup"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ButValUp"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTpid" />
+
+    <TextView
+        android:id="@+id/TextButKpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/ButKup"
+        app:layout_constraintStart_toStartOf="@+id/ButKup"
+        app:layout_constraintTop_toBottomOf="@+id/ButKup" />
+
+    <Button
+        android:id="@+id/ButKdn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButValDown"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintEnd_toEndOf="@+id/ButKup"
+        app:layout_constraintStart_toStartOf="@+id/ButKup"
+        app:layout_constraintTop_toBottomOf="@+id/TextButKpid" />
+
+    <TextView
+        android:id="@+id/textTust"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButUst"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/ButUup"
+        app:layout_constraintStart_toStartOf="@+id/ButUup"
+        app:layout_constraintTop_toBottomOf="@+id/textTwa" />
+
+    <Button
+        android:id="@+id/ButUup"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/ButValUp"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTust" />
+
+    <TextView
+        android:id="@+id/TextButUst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#83F7F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/ButUup"
+        app:layout_constraintStart_toStartOf="@+id/ButUup"
+        app:layout_constraintTop_toBottomOf="@+id/ButUup" />
+
+    <Button
+        android:id="@+id/ButUdn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButValDown"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintEnd_toEndOf="@+id/ButUup"
+        app:layout_constraintStart_toStartOf="@+id/ButUup"
+        app:layout_constraintTop_toBottomOf="@+id/TextButUst" />
+
+    <Button
+        android:id="@+id/ButSend"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButSend"
+        android:textColor="#01C2AC"
+        android:textColorHint="#D38787"
+        app:layout_constraintBottom_toBottomOf="@+id/ButKdn"
+        app:layout_constraintEnd_toStartOf="@+id/ButUdn"
+        app:layout_constraintStart_toEndOf="@+id/ButKdn"
+        app:layout_constraintTop_toTopOf="@+id/ButKup" />
+
+</android.support.constraint.ConstraintLayout>

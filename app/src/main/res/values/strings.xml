@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SamogonBt</string>
+    <string name="ButtonConnect">Соединиться</string>
+    <string name="ButtonClose">Закрыть</string>
+    <string name="ButtonPump">Охлаждение</string>
+    <string name="ButtonHeat">Нагрев</string>
+    <string name="ButtonGon">Перегонка</string>
+    <string name="Alarm">АХТУНГ-ПЕРЕГРЕВ!!!</string>
+    <string name="ButValUp">+</string>
+    <string name="ButValDown">-</string>
+    <string name="ButUst">Уставка</string>
+    <string name="ButKpid">Коэффициент</string>
+    <string name="ButSend">Отправить</string>
+</resources>
